@@ -18,6 +18,7 @@
 #include "proto-pop3.h"
 #include "proto-vnc.h"
 #include "proto-memcached.h"
+#include "proto-mc.h"
 #include "masscan-app.h"
 #include "scripting.h"
 #include "versioning.h"
@@ -302,6 +303,15 @@ banner1_parse(
                                    banout,
                                    more);
         break;
+    case PROTO_MC:
+        banner_mc.parse(
+                        banner1,
+                        banner1->http_fields,
+                        tcb_state,
+                        px, length,
+                        banout,
+                        more);
+        break;
 
     default:
         fprintf(stderr, "banner1: internal error\n");
@@ -345,7 +355,6 @@ banner1_create(void)
      */
     b->payloads.tcp[80] = &banner_http;
     b->payloads.tcp[8080] = &banner_http;
-    b->payloads.tcp[25565] = (void*)&banner_http;
     b->payloads.tcp[139] = (void*)&banner_smb0;
     b->payloads.tcp[445] = (void*)&banner_smb1;
     b->payloads.tcp[443] = (void*)&banner_ssl;   /* HTTP/s */
@@ -383,7 +392,8 @@ banner1_create(void)
     banner_telnet.init(b);
     banner_rdp.init(b);
     banner_vnc.init(b);
-    
+    banner_mc.init(b);
+
     /* scripting/versioning come after the rest */
     banner_scripting.init(b);
     banner_versioning.init(b);
