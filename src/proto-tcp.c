@@ -1235,7 +1235,7 @@ application(struct TCP_ConnectionTable *tcpcon,
         App_ReceiveNext,
         App_SendNext,
     };
-    
+
     switch (tcb->established) {
         case App_Connect:
             if (banner1->payloads.tcp[tcb->port_them] == &banner_scripting) {
@@ -1315,6 +1315,12 @@ application(struct TCP_ConnectionTable *tcpcon,
             } else if (action == APP_RECV_PAYLOAD) {
                 tcb->established = App_ReceiveNext;
                 /* fall through */
+            } else if (action == APP_SEND_SENT){
+                    uint16_t b = 0x0001;
+                    tcpcon_send_packet(tcpcon, tcb, 0x18,&b, 2, 0);
+                    tcb->seqno_me += (uint32_t)2;
+                    tcb->is_payload_dynamic = 0;
+                    tcb->tcpstate = STATE_ESTABLISHED_SEND;
             }
             /* fall through */
         case App_ReceiveNext:

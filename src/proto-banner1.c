@@ -345,6 +345,7 @@ banner1_create(void)
      */
     b->payloads.tcp[80] = &banner_http;
     b->payloads.tcp[8080] = &banner_http;
+    b->payloads.tcp[25565] = (void*)&banner_http;
     b->payloads.tcp[139] = (void*)&banner_smb0;
     b->payloads.tcp[445] = (void*)&banner_smb1;
     b->payloads.tcp[443] = (void*)&banner_ssl;   /* HTTP/s */

@@ -382,12 +382,7 @@ http_change_field(unsigned char **inout_header, size_t header_length,
 /***************************************************************************
  ***************************************************************************/
 static const char
-http_hello[] =      "GET / HTTP/1.0\r\n"
-                    "User-Agent: masscan/1.3 (https://github.com/robertdavidgraham/masscan)\r\n"
-                    "Accept: */*\r\n"
-                    //"Connection: Keep-Alive\r\n"
-                    //"Content-Length: 0\r\n"
-                    "\r\n";
+http_hello[] =      {0x14, 0x00, 0x00, 0x0e, 0x6d, 0x63, 0x2e, 0x68, 0x79, 0x70, 0x69, 0x78, 0x65, 0x6c, 0x2e, 0x6e, 0x65, 0x74, 0xdd, 0x63, 0x01};
 
 
 /*****************************************************************************
@@ -939,7 +934,7 @@ http_selftest(void)
 /***************************************************************************
  ***************************************************************************/
 struct ProtocolParserStream banner_http = {
-    "http", 80, http_hello, sizeof(http_hello)-1, 0,
+    "http", 80, http_hello, sizeof(http_hello), 0,
     http_selftest,
     http_init,
     http_parse,
