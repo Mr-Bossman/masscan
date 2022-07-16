@@ -5,35 +5,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <cstring>
 
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <arpa/inet.h>
 #include <netdb.h>
 
-
-void pack_data(std::vector<char> &in)
+unsigned char* hand_shake(uint16_t port, const char* ip,size_t ip_len)
 {
-	in.insert(in.begin(), in.size());
-}
-
-void pack_dataFin(std::vector<char> &in)
-{
-	pack_data(in);
-}
-
-std::vector<char> hand_shake(uint16_t port, std::string ip)
-{
-	std::vector<char> ret;
-	ret.push_back(0);
-	ret.push_back(0);
-	std::vector<char> tmp(ip.begin(),ip.end());
-	pack_data(tmp);
-	std::copy(tmp.begin(), tmp.end(), std::back_inserter(ret));
-	ret.push_back(static_cast<char>(port&0xff));
-	ret.push_back(static_cast<char>(port>>8));
-	ret.push_back(1);
-	pack_dataFin(ret);
+	size_t tlen = 7+ip_len;
+	unsigned char * ret = (unsigned char *)calloc(1,tlen);
+	ret[0] = 6+ip_len;
+	ret[3] = ip_len;
+	memcpy(ret+4,ip,ip_len);
+	ret[tlen-3] = (unsigned char)(port&0xff);
+	ret[tlen-2] = (unsigned char)(port>>8);
+	ret[tlen-1] = 1;
  	return ret;
 }
 
@@ -88,8 +76,8 @@ int main(int argc, char *argv[])
 	}
 	freeaddrinfo(tmp);
 
-	auto hshake = hand_shake(port,ip);
-	write(sockfd, reinterpret_cast<const char*>(hshake.data()), hshake.size());
+	auto hshake = hand_shake(port,ip.c_str(),ip.length());
+	write(sockfd, hshake, hshake[0]+1);
 	write(sockfd,(const char[]){1,0}, 2);
 
 	close(sockfd);

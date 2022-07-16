@@ -1314,13 +1314,39 @@ application(struct TCP_ConnectionTable *tcpcon,
                 break;
             } else if (action == APP_RECV_PAYLOAD) {
                 tcb->established = App_ReceiveNext;
-                /* fall through */
+                /* server didn't respond on first packet */
             } else if (action == APP_SEND_SENT){
-                    uint16_t b = 0x0001;
-                    tcpcon_send_packet(tcpcon, tcb, 0x18,&b, 2, 0);
-                    tcb->seqno_me += (uint32_t)2;
-                    tcb->is_payload_dynamic = 0;
+                struct ProtocolParserStream *stream = banner1->payloads.tcp[tcb->port_them];
+                if (stream->transmit_hello_callback){
+                        unsigned ctrl = 0;
+                        struct InteractiveData more = {0};
+                        stream->transmit_hello_callback(banner1, &more);
+
+                     /*
+                     * Kludge
+                     */
+                    if (banner1->payloads.tcp[tcb->port_them] == &banner_ssl) {
+                        tcb->banner1_state.is_sent_sslhello = 1;
+                    }
+
+                    /*
+                     * KLUDGE
+                     */
+                    if (tcpcon->banner1->is_heartbleed) {
+                        ctrl = CTRL_SMALL_WINDOW;
+                    }
+
+                    /*
+                     * Queue up the packet to be sent
+                     */
+                    LOGip(4, tcb->ip_them, tcb->port_them, "sending payload %u bytes\n", more.m_length);
+                    LOGSEND(tcb, "peer(payload)");
+                    tcpcon_send_packet(tcpcon, tcb, 0x18, more.m_payload, more.m_length, ctrl);
+                    tcb->seqno_me += (uint32_t)more.m_length;
+                    tcb->is_payload_dynamic = more.is_payload_dynamic;
                     tcb->tcpstate = STATE_ESTABLISHED_SEND;
+                }
+                /* fall through */
             }
             /* fall through */
         case App_ReceiveNext:
