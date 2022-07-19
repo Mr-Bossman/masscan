@@ -274,7 +274,8 @@ struct ProtocolParserStream {
         struct InteractiveData *more);
     void (*cleanup)(struct ProtocolState *stream_state);
     void (*transmit_hello)(const struct Banner1 *banner1, struct InteractiveData *more);
-    
+    void (*transmit_hello_callback)(const struct Banner1 *banner1, struct InteractiveData *more);
+
     /* When multiple items are registered for a port. When one
      * connection is closed, the next will be opened.*/
     struct ProtocolParserStream *next;
