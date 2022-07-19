@@ -130,6 +130,7 @@ struct MCSTUFF {
     size_t totalLen;
     size_t imgstart;
     size_t imgend;
+    int brackcount;
 };
 
 struct SMTPSTUFF {

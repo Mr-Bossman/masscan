@@ -67,7 +67,14 @@ mc_parse(  const struct Banner1 *banner1,
             }
         }
     }
-
+    for(size_t i = 0; i < length; i++){
+        if(px[i] == '{')
+            mc->brackcount++;
+        if(px[i] == '}')
+            mc->brackcount--;
+    }
+    if(mc->brackcount <= 0)
+        more->is_closing = 1;
 }
 
 /***************************************************************************
