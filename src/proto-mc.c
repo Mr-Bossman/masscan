@@ -3,6 +3,7 @@
 #include "unusedparm.h"
 #include "masscan-app.h"
 #include "proto-interactive.h"
+#include "output.h"
 #include <ctype.h>
 #include <string.h>
 #include <stdlib.h>
@@ -22,6 +23,20 @@ unsigned char* hand_shake(uint16_t port, const char* ip,size_t ip_len)
   return ret;
 }
 
+char * banmem;
+size_t totalLen=0;
+size_t imgstart = 0;
+size_t imgend = 0;
+void* memstr(void * mem, size_t len, char * str){
+    size_t stlen = strlen(str);
+    if(len < stlen)
+        return 0;
+    for(size_t i = 0; i < len-stlen; i++){
+        if(!memcmp(mem+i,str,stlen))
+            return mem+i;
+    }
+    return 0;
+}
 /***************************************************************************
  ***************************************************************************/
 static void
@@ -32,8 +47,27 @@ mc_parse(  const struct Banner1 *banner1,
           struct BannerOutput *banout,
           struct InteractiveData *more)
 {
-
-    pstate->state = length;
+    if(imgstart&&imgend) { // we already found and removed image data
+        banout_append(banout, PROTO_MC,px,length);
+    } else {
+        banmem = realloc(banmem,totalLen+length+1); // expand to add new memory for added paket
+        memcpy(banmem+totalLen,px,length); // copy in new packet
+        banmem[totalLen] = 0; // add ending 0 for str
+        totalLen+=length;
+        if(!imgstart) { // dont search again if we found start
+            imgstart = (size_t)memstr(banmem,totalLen,"data:image/png;base64");
+            if(imgstart)
+                imgstart-=(size_t)banmem;
+        } else { // we found start but not the end
+            if((imgend = (size_t)memchr(banmem+imgstart,'\"',totalLen-imgstart))){ // we found the end
+                imgend-=(size_t)banmem;
+                memcpy(banmem+imgstart,banmem+imgend,(totalLen-imgend)+1); // copy data after B64
+                totalLen=imgstart+(totalLen-imgend); // shrink length to subtract B64 image
+                banout_append(banout, PROTO_MC,banmem,totalLen); // print out banner minus image data
+                free(banmem); // we dont need to keep track of this any more.
+            }
+        }
+    }
 
 }
 
