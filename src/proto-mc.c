@@ -8,7 +8,8 @@
 #include <string.h>
 #include <stdlib.h>
 
-static unsigned char * hand_shake_ptr = NULL;
+static unsigned char hand_shake_ptr[128];
+static unsigned char statusQ[] = {1,0};
 
 unsigned char* hand_shake(uint16_t port, const char* ip,size_t ip_len)
 {
@@ -23,10 +24,6 @@ unsigned char* hand_shake(uint16_t port, const char* ip,size_t ip_len)
   return ret;
 }
 
-char * banmem;
-size_t totalLen=0;
-size_t imgstart = 0;
-size_t imgend = 0;
 void* memstr(void * mem, size_t len, char * str){
     size_t stlen = strlen(str);
     if(len < stlen)
@@ -47,24 +44,26 @@ mc_parse(  const struct Banner1 *banner1,
           struct BannerOutput *banout,
           struct InteractiveData *more)
 {
-    if(imgstart&&imgend) { // we already found and removed image data
+    struct MCSTUFF *mc = &pstate->sub.mc;
+
+    if(mc->imgstart&&mc->imgend) { // we already found and removed image data
         banout_append(banout, PROTO_MC,px,length);
     } else {
-        banmem = realloc(banmem,totalLen+length+1); // expand to add new memory for added paket
-        memcpy(banmem+totalLen,px,length); // copy in new packet
-        banmem[totalLen] = 0; // add ending 0 for str
-        totalLen+=length;
-        if(!imgstart) { // dont search again if we found start
-            imgstart = (size_t)memstr(banmem,totalLen,"data:image/png;base64");
-            if(imgstart)
-                imgstart-=(size_t)banmem;
+        mc->banmem = realloc(mc->banmem,mc->totalLen+length+1); // expand to add new memory for added paket
+        memcpy(mc->banmem+mc->totalLen,px,length); // copy in new packet
+        mc->banmem[mc->totalLen] = 0; // add ending 0 for str
+        mc->totalLen+=length;
+        if(!mc->imgstart) { // dont search again if we found start
+            mc->imgstart = (size_t)memstr(mc->banmem,mc->totalLen,"data:image/png;base64");
+            if(mc->imgstart)
+                mc->imgstart-=(size_t)mc->banmem;
         } else { // we found start but not the end
-            if((imgend = (size_t)memchr(banmem+imgstart,'\"',totalLen-imgstart))){ // we found the end
-                imgend-=(size_t)banmem;
-                memcpy(banmem+imgstart,banmem+imgend,(totalLen-imgend)+1); // copy data after B64
-                totalLen=imgstart+(totalLen-imgend); // shrink length to subtract B64 image
-                banout_append(banout, PROTO_MC,banmem,totalLen); // print out banner minus image data
-                free(banmem); // we dont need to keep track of this any more.
+            if((mc->imgend = (size_t)memchr(mc->banmem+mc->imgstart,'\"',mc->totalLen-mc->imgstart))){ // we found the end
+                mc->imgend-=(size_t)mc->banmem;
+                memcpy(mc->banmem+mc->imgstart,mc->banmem+mc->imgend,(mc->totalLen-mc->imgend)+1); // copy data after B64
+                mc->totalLen=mc->imgstart+(mc->totalLen-mc->imgend); // shrink length to subtract B64 image
+                banout_append(banout, PROTO_MC,mc->banmem,mc->totalLen); // print out banner minus image data
+                free(mc->banmem); // we dont need to keep track of this any more.
             }
         }
     }
@@ -76,7 +75,9 @@ mc_parse(  const struct Banner1 *banner1,
 static void *
 mc_init(struct Banner1 *banner1)
 {
-    hand_shake_ptr = hand_shake(25565,"localhost",9);
+    unsigned char * tmp = hand_shake(25565,"localhost",9);
+    memcpy(hand_shake_ptr,tmp,tmp[0]+1);
+    free(tmp);
     banner_mc.hello = hand_shake_ptr;
     banner_mc.hello_length = hand_shake_ptr[0]+1;
     banner1->payloads.tcp[25565] = (void*)&banner_mc;
@@ -94,22 +95,11 @@ mc_selftest(void)
 /***************************************************************************
  ***************************************************************************/
 static void
-mc_clean(struct ProtocolState *stream_state)
-{
-    free(hand_shake_ptr);
-}
-
-/***************************************************************************
- ***************************************************************************/
-static void
 mc_callback(const struct Banner1 *banner1, struct InteractiveData *more)
 {
-    char *statusQ = malloc(2);
-    statusQ[0] = 1;
-    statusQ[1] = 0;
     more->m_length = 2;
     more->m_payload = (void *)statusQ;
-    more->is_payload_dynamic = 1;
+    more->is_payload_dynamic = 0;
 }
 
 /***************************************************************************
@@ -119,7 +109,7 @@ struct ProtocolParserStream banner_mc = {
     mc_selftest,
     mc_init,
     mc_parse,
-    mc_clean,
+    0,
     0,
     mc_callback
 };
