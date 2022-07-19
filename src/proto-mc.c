@@ -24,16 +24,18 @@ unsigned char* hand_shake(uint16_t port, const char* ip,size_t ip_len)
   return ret;
 }
 
-void* memstr(void * mem, size_t len, char * str){
+void* memstr(void * mem, size_t len, char * str)
+{
     size_t stlen = strlen(str);
     if(len < stlen)
         return 0;
-    for(size_t i = 0; i < len-stlen; i++){
+    for(size_t i = 0; i < len-stlen; i++) {
         if(!memcmp(mem+i,str,stlen))
             return mem+i;
     }
     return 0;
 }
+
 /***************************************************************************
  ***************************************************************************/
 static void
@@ -67,7 +69,7 @@ mc_parse(  const struct Banner1 *banner1,
             }
         }
     }
-    for(size_t i = 0; i < length; i++){
+    for(size_t i = 0; i < length; i++) {
         if(px[i] == '{')
             mc->brackcount++;
         if(px[i] == '}')

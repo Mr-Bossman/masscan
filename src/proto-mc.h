@@ -6,4 +6,3 @@
 extern struct ProtocolParserStream banner_mc;
 
 #endif
-
