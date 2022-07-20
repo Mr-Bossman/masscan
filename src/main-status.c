@@ -244,13 +244,14 @@ status_print(
             if (json_status == 1)
                 fmt = json_fmt_running;
             else
-                fmt = "rate:%6.2f-kpps, %5.2f%% done,%4u:%02u:%02u remaining, found=%" PRIu64 "       \r";
+                fmt = "rate:%6.2f-kpps, %5.2f%% done,%4u:%02u:%02u:%02u remaining, found=%" PRIu64 "       \r";
 
             fprintf(stderr,
                 fmt,
                 pps/1000.0,
                 percent_done,
-                (unsigned)(time_remaining/60/60),
+                (unsigned)(time_remaining/60/60/24),
+                (unsigned)(time_remaining/60/60)%24,
                 (unsigned)(time_remaining/60)%60,
                 (unsigned)(time_remaining)%60,
                 total_synacks,

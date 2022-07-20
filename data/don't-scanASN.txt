@@ -1,0 +1,933 @@
+AS513 CERN
+AS59624 RU
+AS28810 WHO
+AS786 JANET
+AS7 DTSL
+AS749 DoD Network Information Center 207816192
+AS721 DoD Network Information Center 73827584
+AS306 DoD Network Information Center 4919808
+AS668 DoD Network Information Center 2939648
+AS5972 DoD Network Information Center 1992704
+AS27064 DoD Network Information Center 1630720
+AS637 DoD Network Information Center 948992
+AS367 DoD Network Information Center 877312
+AS647 DoD Network Information Center 435968
+AS361 DoD Network Information Center 393216
+AS326 DoD Network Information Center 331008
+AS357 DoD Network Information Center 327680
+AS5180 DoD Network Information Center 263936
+AS27046 DoD Network Information Center 247296
+AS6039 DoD Network Information Center 237312
+AS1600 DoD Network Information Center 203776
+AS138 DoD Network Information Center 203520
+AS340 DoD Network Information Center 196608
+AS331 DoD Network Information Center 196608
+AS6035 DoD Network Information Center 176896
+AS27142 DoD Network Information Center 161792
+AS665 DoD Network Information Center 150272
+AS6041 DoD Network Information Center 142592
+AS1556 DoD Network Information Center 132096
+AS1580 DoD Network Information Center 131584
+AS5831 DoD Network Information Center 131328
+AS341 DoD Network Information Center 131328
+AS1563 DoD Network Information Center 131328
+AS351 DoD Network Information Center 131072
+AS325 DoD Network Information Center 131072
+AS365 DoD Network Information Center 131072
+AS343 DoD Network Information Center 131072
+AS362 DoD Network Information Center 131072
+AS356 DoD Network Information Center 131072
+AS5839 DoD Network Information Center 118528
+AS1585 DoD Network Information Center 110848
+AS5852 DoD Network Information Center 110080
+AS5307 DoD Network Information Center 99584
+AS6026 DoD Network Information Center 97536
+AS300 DoD Network Information Center 96000
+AS27065 DoD Network Information Center 93696
+AS5974 DoD Network Information Center 93184
+AS5939 DoD Network Information Center 82432
+AS1555 DoD Network Information Center 70400
+AS6042 DoD Network Information Center 69888
+AS360 DoD Network Information Center 67584
+AS344 DoD Network Information Center 67584
+AS687 DoD Network Information Center 67328
+AS345 DoD Network Information Center 67072
+AS337 DoD Network Information Center 66304
+AS1562 DoD Network Information Center 66048
+AS317 DoD Network Information Center 66048
+AS321 DoD Network Information Center 66048
+AS329 DoD Network Information Center 66048
+AS1569 DoD Network Information Center 65792
+AS1559 DoD Network Information Center 65792
+AS1565 DoD Network Information Center 65792
+AS1959 DoD Network Information Center 65792
+AS352 DoD Network Information Center 65536
+AS323 DoD Network Information Center 65536
+AS5376 DoD Network Information Center 65536
+AS334 DoD Network Information Center 65536
+AS350 DoD Network Information Center 65536
+AS353 DoD Network Information Center 65536
+AS1566 DoD Network Information Center 65536
+AS364 DoD Network Information Center 65536
+AS371 DoD Network Information Center 65536
+AS348 DoD Network Information Center 65536
+AS316 DoD Network Information Center 65536
+AS320 DoD Network Information Center 65536
+AS347 DoD Network Information Center 65536
+AS336 DoD Network Information Center 65536
+AS370 DoD Network Information Center 65536
+AS366 DoD Network Information Center 65536
+AS349 DoD Network Information Center 65536
+AS359 DoD Network Information Center 65536
+AS307 DoD Network Information Center 65536
+AS328 DoD Network Information Center 65536
+AS324 DoD Network Information Center 65536
+AS368 DoD Network Information Center 65536
+AS342 DoD Network Information Center 65536
+AS319 DoD Network Information Center 65536
+AS339 DoD Network Information Center 65536
+AS322 DoD Network Information Center 65536
+AS327 DoD Network Information Center 65536
+AS358 DoD Network Information Center 65536
+AS335 DoD Network Information Center 65536
+AS6009 DoD Network Information Center 65536
+AS338 DoD Network Information Center 65536
+AS1586 DoD Network Information Center 65536
+AS5264 DoD Network Information Center 65536
+AS346 DoD Network Information Center 65536
+AS355 DoD Network Information Center 65536
+AS27066 DoD Network Information Center 56320
+AS149 DoD Network Information Center 52736
+AS1590 DoD Network Information Center 34304
+AS1568 DoD Network Information Center 33024
+AS5374 DoD Network Information Center 32768
+AS2577 DoD Network Information Center 32768
+AS6034 DoD Network Information Center 28672
+AS571 DoD Network Information Center 27648
+AS369 DoD Network Information Center 26624
+AS27138 DoD Network Information Center 25088
+AS5237 DoD Network Information Center 18944
+AS5133 DoD Network Information Center 18432
+AS2046 DoD Network Information Center 18176
+AS3136 State of WI Dept. of Administration 394240
+AS393601 State of Missouri Office of Administration 65536
+AS4193 State of Washington 660480
+AS14977 State of Wyoming Department A&amp;I 595200
+AS11663 State of Utah 393216
+AS21852 State Of Arkansas Division of Information Systems 312320
+AS1998 State of Minnesota 296448
+AS4454 State of Tennessee 262400
+AS2048 State of Louisiana Office of Technology Services 220160
+AS1798 State of Oregon 219392
+AS30449 State of Arizona 201728
+AS3724 State of Alaska 133888
+AS36081 State of Colorado General Government Computer 131840
+AS2939 State of South Carolina 103424
+AS6263 State of North Dakota 83456
+AS3482 State of Montana 66048
+AS3446 State of Kansas 65792
+AS30641 STATE OF DELAWARE 65792
+AS14235 State of New Mexico 65536
+AS21783 State of Nevada 65536
+AS19530 State of North Dakota ITD 65536
+AS2769 State of Nebraska - Office of the Chief Information Officer 65536
+AS54885 State of Idaho 65280
+AS3481 State of Connecticut 63232
+AS27512 State of Rhode Island 34816
+AS62712 State of Hawaii 21248
+AS22164 Clark County School District 81920
+AS21984 Fairfax County Public Schools 65536
+AS22315 San Bernardino County Superintendent of Schools 65536
+AS53648 School Board of Alachua County 65536
+AS32073 Montgomery County Public Schools 64512
+AS394488 Bergen County Vocational Technical School District 34816
+AS36300 Pinellas County Schools 32768
+AS39999 Polk County Public Schools 32768
+AS7970 Leon County School District 20480
+AS5783 Kern County Superintendent of Schools 17408
+AS11131 University of Maryland Baltimore County (UMBC) 81920
+AS11188 LOS ANGELES COUNTY - INTERNAL SERVICESDIVISION 197376
+AS6099 Alameda County Office of Education 155648
+AS3734 Santa Clara County Office of Education 142336
+AS2920 Los Angeles County Office of Education 139776
+AS395226 Sacramento County Office of Education 91136
+AS18558 Riverside County Office of Education 71936
+AS3926 Fairfax County Dept of Information Technology 69632
+AS33348 Pierce County 66816
+AS46093 Palm Beach County 66304
+AS2768 The County of Erie 66304
+AS40382 Hennepin County 66048
+AS2544 King County Gov 65792
+AS33527 Metropolitan Government of Nashville and Davidson County Tennessee 65792
+AS36161 County of Westchester 65536
+AS46196 County of Riverside 65536
+AS13829 Pima County 65536
+AS17311 Erie County Medical Center 65536
+AS22498 Pinellas County Government 65536
+AS23309 Contra Costa County Office of Education 65536
+AS23282 Santa Barbara County 65536
+AS30051 Santa Clara County 65536
+AS46298 Harris County Hospital District 65536
+AS18815 CITY AND COUNTY OF DENVER 65536
+AS4211 Maricopa County Government 65536
+AS13940 San Joaquin County Office of Education 65536
+AS23410 Nassau County BOCES 65024
+AS54179 Ventura County Office of Education 36864
+AS21713 Bulloch County Rural Telephone Cooperative Inc. 33280
+AS23065 Santa Barbara County Education Office 32768
+AS25807 Arlington County Government 32768
+AS1983 Bernalillo County 29952
+AS23024 Orange County Department of Education 29184
+AS393581 Wayne County Regional EducationalService Agency 28672
+AS19963 Dutchess County BOCES 21760
+AS21828 Tulare County Office of Education 20480
+AS23483 Shasta County Office of Education 16640
+AS19800 Grant County Public Utility District 16640
+AS31822 City University of New York 659712
+AS3390 University of Missouri - Kansas City 69632
+AS22252 The City of New York 196608
+AS27370 City of Boston 70144
+AS25979 CITY OF MADISON 69632
+AS395789 City of Indianapolis 67584
+AS26439 City of Albuquerque 67584
+AS36548 City of Jacksonville Florida 67328
+AS394534 City of Chicago 66560
+AS21704 New York City Board of Education 66048
+AS396484 City of Roseville 65536
+AS11205 City of Philadelphia 65536
+AS3709 City of San Antonio 65536
+AS395877 City of Tempe Arizona 65536
+AS13918 City of Tucson 65536
+AS16700 City of Thomasville Utilities 44032
+AS7341 Velocity Network Inc. 36864
+AS40749 CLARKSVILLE DEPARTMENT OF ELECTRICITY 35840
+AS396001 City of Tacoma 33280
+AS14677 City of Tacoma 33280
+AS6536 CityNet 32768
+AS21589 City of San Jose 24576
+AS393856 City of Westfield (Gas &amp; Electric Light Department) 24064
+AS36223 Spanish Fork City 22528
+AS8018 Velocity Networks Inc. 19456
+AS27202 City of Bardstown Kentucky 17408
+AS18664 Velocity Technology Solutions Inc 17408
+AS33138 New York City Police Department 16896
+AS11687 City of Hope Medical Center 16896
+AS20252 Joan and Sanford I. Weill Medical College and Graduate School of Medical Sciences of Cornell University 98304
+AS394917 San Diego Unified School District 66048
+AS36704 Colorado School of Mines 65792
+AS6377 Eugene School District 4J 65792
+AS397909 Elk Grove Unified School District 65792
+AS14241 Oakland Schools 65792
+AS4604 Houston Independent School District 65536
+AS26818 Columbus Public Schools 65536
+AS31848 Deer Valley Unified School District #97 65536
+AS11500 Milwaukee School of Engineering 65536
+AS15323 Bellevue School District #405 65536
+AS33235 San Juan Unified School District 65536
+AS32501 Tucson Unified School District #1 65536
+AS6628 Portland Public Schools 65536
+AS22226 San Francisco Unified School District 65536
+AS54060 Poudre School District R-1 65536
+AS53446 Eastern Virginia Medical School 65536
+AS11534 School District of Philadelphia 65536
+AS27616 The New School 65536
+AS399911 Salem-Keizer Public Schools 65536
+AS11602 South Dakota School of Mines &amp; Technology 60416
+AS11452 Mount Sinai School of Medicine 55552
+AS398535 EAST SIDE UNION HIGH SCHOOL DIST 52480
+AS26463 Macomb Intermediate School District 32768
+AS6172 Mesa Public Schools 32768
+AS397342 Palo Alto Unified School District 32768
+AS7377 University of California San Diego 12855552
+AS2152 California State University Office of the Chancellor 2078976
+AS3479 Board of Regents of the University System of Georgia 1641984
+AS36375 University of Michigan 826368
+AS2572 University of Missouri - dba the Missouri Research and Education Network (MOREnet) 788224
+AS231 Michigan State University 787456
+AS3354 University of Texas System 786944
+AS87 Indiana University 655616
+AS3128 University of Wisconsin System 655360
+AS8 Rice University 460544
+AS3999 The Pennsylvania State University 443648
+AS17 Purdue University 426240
+AS17055 University of Utah 398592
+AS32 Stanford University 329728
+AS59 University of Wisconsin Madison 329472
+AS52 University of California Los Angeles 329216
+AS3480 Board of Regents of the University System of Georgia 328704
+AS217 University of Minnesota 327680
+AS18 University of Texas at Austin 299520
+AS73 University of Washington 297216
+AS557 University of Maine System 293120
+AS1970 Texas A&amp;M University 267520
+AS14041 University Corporation for Atmospheric Research 262656
+AS55 University of Pennsylvania 262656
+AS299 University of California Irvine 262400
+AS6360 University of Hawaii 254464
+AS6192 University of California Davis 229632
+AS38 University of Illinois 212992
+AS1742 Harvard University 211712
+AS2055 Louisiana State University 210688
+AS7896 University of Nebraska-Lincoln 209152
+AS14 Columbia University 208896
+AS36850 University of North Carolina at Chapel Hill 203264
+AS25 University of California at Berkeley 201984
+AS159 The Ohio State University 198400
+AS225 University of Virginia 198144
+AS4130 University of Pittsburgh 197632
+AS11442 North Carolina State University 197632
+AS26 Cornell University 197376
+AS2553 Florida State University 196864
+AS5653 University of California San Francisco 196608
+AS3701 University of Oregon 174592
+AS2900 Arizona Tri University Network 173056
+AS111 Boston University 165888
+AS1968 University of Massachusettes 163840
+AS103 Northwestern University 150016
+AS3582 University of Oregon 149504
+AS1706 University of Arizona 149504
+AS13371 Duke University 147712
+AS27 University of Maryland 139776
+AS6059 University of Maryland 138496
+AS26934 University of Missouri-Columbia 138496
+AS88 Princeton University 137472
+AS5723 Johns Hopkins University 135680
+AS23162 University of Kentucky 135424
+AS9 Carnegie Mellon University 134912
+AS3512 Emory University 133376
+AS131 University of California Santa Barbara 132096
+AS46 Rutgers The State University 132096
+AS2025 University of Toledo 132096
+AS156 Northeastern University 131840
+AS11834 Drexel University 131840
+AS29 Yale University 131840
+AS5739 University of California Santa Cruz 131584
+AS3778 Temple University 131328
+AS6106 University of California Riverside 131328
+AS16989 The University of Tennessee Memphis 131328
+AS3676 University of Iowa 131328
+AS11078 Brown University 131328
+AS6200 University of Illinois at Chicago 131328
+AS32480 Loma Linda University Medical Center 131072
+AS16519 University of Colorado Denver 131072
+AS11872 Syracuse University 131072
+AS5707 The University of Texas Health Science Center at Houston 131072
+AS11039 The George Washington University 131072
+AS4190 Binghamton University 131072
+AS1832 Southern Methodist University 131072
+AS13809 University of Arkansas for Medical Sciences 131072
+AS3794 Texas A&amp;M University 131072
+AS3450 University of Tennessee 119808
+AS160 University of Chicago 114944
+AS29848 West Chester University of Pennsylvania 108032
+AS18759 Georgia Southern University 106496
+AS3388 University of New Mexico 99840
+AS12148 Clemson University 98560
+AS32234 University of Dayton 98304
+AS12 New York University 97792
+AS3685 State University of New York at Buffalo 92928
+AS12118 West Virginia University 90624
+AS13796 University of Connecticut 90112
+AS2698 Iowa State University of Science and Technology 87808
+AS20130 Depaul University 86016
+AS36441 University of Georgia 86016
+AS3807 University of Montana 85760
+AS17135 Ohio University 82688
+AS10421 Texas Tech University 82432
+AS16922 University of Oklahoma HSC 82176
+AS7774 University of Alaska 81920
+AS12145 Colorado State University 81920
+AS53785 University of North Carolina at Greensboro 81920
+AS13476 Montana State University 80640
+AS693 University of Notre Dame 77824
+AS2 University of Delaware 77056
+AS4511 University of Miami 75008
+AS104 University of Colorado at Boulder 74496
+AS21582 Northern Arizona University 74240
+AS2552 Washington University 73984
+AS11481 University of Texas Rio Grande Valley 73728
+AS22968 Miami University 73728
+AS62676 University of Michigan - Dearborn 73728
+AS11745 University System of New Hampshire 73728
+AS10546 Mississippi State University 73472
+AS1252 University of Nebraska Medical Center 73472
+AS26333 University of New Orleans 71680
+AS4 University of Southern California 70656
+AS396465 California State University Sacramento 70400
+AS11827 Washington State University 70144
+AS25691 Connecticut State University System 69632
+AS22985 University of Louisiana at Lafayette 69632
+AS7960 California Polytechnic State University 69376
+AS47 University of Southern California 68352
+AS11809 Embry-Riddle University 67840
+AS11252 Idaho State University 67584
+AS12005 University of South Carolina 67584
+AS395421 Oklahoma State University 67072
+AS1204 State University of New York Central 66560
+AS40246 New Mexico State University 66560
+AS29842 East Tennessee State University 66560
+AS10349 Tulane University 66560
+AS2701 Kansas State University 66560
+AS16643 Virginia Commonwealth University 66560
+AS62989 Indiana University of Pennsylvania 66304
+AS2902 University of Wyoming 66304
+AS398537 Kutztown University 66304
+AS18777 Texas State University - San Marcos 66304
+AS7212 Vanderbilt University 66304
+AS32666 Case Western Reserve University 66304
+AS11348 Missouri University of Science and Technology 66048
+AS398564 Edinboro University of Pennsylvania 66048
+AS11279 George Mason University 66048
+AS398655 California University of Pennsylvania 66048
+AS398663 Shippensburg University 66048
+AS20452 BALL STATE UNIVERSITY 66048
+AS398573 Lock Haven University 66048
+AS11094 Rutgers The State University 66048
+AS398813 Millersville University of Pennsylvania 66048
+AS7150 Bloomsburg University 66048
+AS398471 Mansfield University 66048
+AS62618 Michigan Technological University 66048
+AS26335 Middle Tennessee State University 66048
+AS18564 St. John's University New York 66048
+AS14351 Southwestern University 66048
+AS589 University of North Texas 66048
+AS63319 Fairleigh Dickinson University 66048
+AS8122 Duquesne University 66048
+AS20 University of Rochester 66048
+AS19184 University of Wisconsin - Eau Claire 66048
+AS7276 University of Houston 66048
+AS46832 University of Missouri - dba the Missouri Research and Education Network (MOREnet) 66048
+AS194 University Corporation for Atmospheric Research 66048
+AS7939 University of Central Florida 65792
+AS34 University of Delaware 65792
+AS36691 Colorado State University-Pueblo 65792
+AS6366 Portland State University 65792
+AS14319 Furman University 65792
+AS7050 University of Wisconsin - Milwaukee 65792
+AS32064 American University 65792
+AS11773 The University Of Texas M.D. Anderson Cancer Center 65792
+AS18791 Texas Christian University 65792
+AS4201 Oregon State University 65792
+AS25631 Gallaudet University 65792
+AS29984 Willamette University 65792
+AS397380 Temple University Health System Inc. 65792
+AS3634 Stephen F. Austin State University 65792
+AS13513 Alfred University 65792
+AS1351 University of Vermont 65792
+AS396425 University of Colorado 65536
+AS5661 UNIVERSITY OF SOUTH FLORIDA 65536
+AS32229 Jackson State University 65536
+AS22323 University of California Merced 65536
+AS32531 Fordham University 65536
+AS30408 Arkansas State University 65536
+AS6074 Long Island University 65536
+AS46103 University of Wisconsin Whitewater 65536
+AS11318 Georgetown University 65536
+AS8036 University of Tulsa 65536
+AS33632 Morehead State University 65536
+AS19464 Washington &amp; Lee University 65536
+AS393750 Truman State University 65536
+AS13326 Tufts University 65536
+AS40245 Wake Forest University 65536
+AS33187 Sam Houston State University 65536
+AS36269 University of Scranton 65536
+AS399569 Vincennes University 65536
+AS1289 Colgate University 65536
+AS1736 Marquette University 65536
+AS46662 Boise State University 65536
+AS98 The Rockefeller University 65536
+AS46905 University of Massachusetts - Lowell 65536
+AS33153 The State University of New York at Potsdam 65536
+AS26971 University of Texas 65536
+AS15295 University of Northern Colorado 65536
+AS399315 Indiana State University 65536
+AS17324 Yeshiva University 65536
+AS33170 Morgan State University 65536
+AS15243 Widener University 65536
+AS11214 University of North Florida 65536
+AS19342 Trinity University 65536
+AS11206 Ferris State University 65536
+AS19106 Andrews University 65536
+AS26488 Santa Clara University 65536
+AS10448 Villanova University 65536
+AS15199 Western Washington University 65536
+AS205 Montclair State University 65536
+AS55194 Bowling Green State University 65536
+AS22700 University of San Francisco 65536
+AS92 Clarkson University 65536
+AS394003 University of Massachusetts Dartmouth 65536
+AS395527 Virginia State University 65536
+AS15119 Southern Illinois University 65536
+AS7202 Florida A &amp; M University 65536
+AS7968 Loyola University Chicago 65536
+AS26046 Utah State University 65536
+AS19096 DeSales University 65536
+AS25789 Loyola Marymount University 65536
+AS25978 Rush University Medical Center 65536
+AS54973 Sacred Heart University 65536
+AS46476 Texas Tech University Health Sciences Center 65536
+AS16461 The University of Texas at El Paso 65536
+AS20343 Pepperdine University 65536
+AS12013 Florida Atlantic University 65536
+AS40591 Bucknell University 65536
+AS1201 Old Dominion University 65536
+AS10631 Georgia State University 65536
+AS11050 Kent State University 65536
+AS32417 Elon University 65536
+AS32071 Western Kentucky University 65536
+AS30703 State University of New York Health Science Center at Syracuse 65536
+AS20126 University of Cincinnati 65536
+AS53260 Clark University 65536
+AS29917 University System of New Hampshire 65536
+AS32907 University of St. Thomas 65536
+AS21784 Atlanta University Center Inc. 65536
+AS14763 St. Catherine University 65536
+AS394769 University of Michigan - Flint 65536
+AS16430 University of Southern Mississippi 65536
+AS25656 University of Mississippi 65536
+AS19564 Louisiana Tech University 65536
+AS22245 Wichita State University 65536
+AS11808 University of Idaho 65536
+AS30681 John Carroll university 65536
+AS30679 California State Polytechnic University - Pomona 65536
+AS14655 Hampton University 65536
+AS10955 WILLIAM PATERSON UNIVERSITY 65536
+AS10952 East Carolina University 65536
+AS13327 Eastern Kentucky University 65536
+AS10561 Brandeis University 65536
+AS23122 Dakota State University 65536
+AS30674 Baylor University 65536
+AS46543 University of Maryland at Baltimore 65536
+AS25968 Southeastern Louisiana University 65536
+AS32818 Cleveland State University Computer Services 65536
+AS14529 Saint Joseph's University 65536
+AS53695 Southern Illinois University at Edwardsville 65536
+AS2496 University of Kansas 65536
+AS20162 University of Texas at Dallas 65536
+AS14512 Bentley University 65536
+AS11659 University of Kansas Medical Center 65536
+AS26367 Bradley University 65536
+AS11649 Gonzaga University 65536
+AS3681 Florida International University 65536
+AS14433 State University of New York - Oswego 65536
+AS22594 University of Northern Iowa 65536
+AS21727 Hamline University 65536
+AS22990 University at Albany State University of New York 65536
+AS18663 University of the Pacific 65536
+AS20105 University of Richmond 65536
+AS13759 Wilkes University 65536
+AS14373 University of Texas Medical Branch 65536
+AS14348 University of Rhode Island 65536
+AS13783 Radford University 65536
+AS33523 Rowan University 65536
+AS6522 Lehigh University 65536
+AS186 The Catholic University of America 65536
+AS27594 University of Texas at San Antonio 65536
+AS14183 University of Arkansas at Little Rock 65536
+AS3659 Claremont University Consortium 65536
+AS393337 University of Hartford 65536
+AS7386 Illinois State University 65536
+AS33281 BRIGHAM YOUNG UNIVERSITY - IDAHO 65536
+AS25969 St. Louis University 65536
+AS22877 University of Maryland Global Campus 65536
+AS10508 University of Arkansas 65536
+AS10357 James Madison University 65536
+AS11607 South Dakota State University 65536
+AS14048 The University of Memphis 65536
+AS3935 Eastern Washington University 65536
+AS11417 Northern Illinois University 65536
+AS40497 Bethel University 65536
+AS6510 Brigham Young University 65536
+AS1657 University of Louisville 65536
+AS25776 University of Oklahoma 65536
+AS18515 University of Texas at Arlington 65536
+AS33703 Hofstra University 65536
+AS53604 University of Arkansas at Pine Bluff 65536
+AS18553 University of West Florida 65536
+AS27405 University System of New Hampshire 65536
+AS27274 Central Michigan University 65536
+AS393529 Vanderbilt University Medical Center 65536
+AS6112 Auburn University 65536
+AS2037 California State University at Fresno 65536
+AS33670 Nova University 65536
+AS13429 Medical University of South Carolina 65536
+AS30499 Youngstown State University 65536
+AS22644 Thomas Jefferson University Hospitals Inc. 61440
+AS32601 Abilene Christian University 59648
+AS13485 Grand Canyon University 53248
+AS62585 Messiah University 49152
+AS46512 University of Tennessee Medical Center 49152
+AS167 Wesleyan University 49152
+AS18454 Augsburg University 49152
+AS11293 University of California - Office of the President 47616
+AS394655 University of Connecticut Health Center 41216
+AS32093 University of Texas at Austin 40960
+AS22887 Western Illinois University 40960
+AS27198 Indiana University 34048
+AS14209 University of Tennessee at Chattanooga 33280
+AS14104 University of Texas System 33280
+AS16498 LaSalle University 32768
+AS19782 Indiana University 32768
+AS40586 University of New Mexico Health Sciences Center 32768
+AS36413 Loyola University Maryland 32768
+AS399565 Shaw University 32768
+AS32733 University of Dayton 32768
+AS22978 Governors State University 32768
+AS393257 Lawrence University 32768
+AS30569 Creighton University 32256
+AS10578 Harvard University 24832
+AS13515 Palm Beach Atlantic University 24576
+AS27609 USC-University Hospital 21760
+AS394391 Central Washington University 21504
+AS394395 Towson State University 21504
+AS397501 Purdue University 19968
+AS14200 Marshall University 18944
+AS16489 Webster University 18432
+AS11736 University of South Dakota 17152
+AS22174 State University of New York College ofTechnology at Alfred 65536
+AS40723 The University of Virginia's College at Wise 65536
+AS398914 State University of New York College at Old Westbury 65536
+AS396349 Five College Net LLC 201472
+AS675 Minnesota State Colleges and Universities 139264
+AS11975 The College of William and Mary 131072
+AS1249 Five Colleges Network 82432
+AS17327 Texas State Technical College at Waco 82176
+AS32432 Colleges of the Fenway Inc. 72960
+AS302 Baylor College of Medicine 67072
+AS22847 Bowdoin College 66816
+AS3592 Trinity College 66048
+AS33022 Wellesley College 65792
+AS23171 Manhattan College 65792
+AS11399 Williams College 65792
+AS30629 Lewis &amp; Clark College 65792
+AS11482 Canisius College 65792
+AS22198 Lafayette College 65792
+AS33434 Hamilton College 65536
+AS399697 SUNY College at Brockport 65536
+AS15337 Wm. Rainey Harper College 65536
+AS396087 St. Mary's College of Maryland 65536
+AS11231 GETTYSBURG COLLEGE 65536
+AS6056 Colby College 65536
+AS36427 Vassar College 65536
+AS32125 Wheaton College 65536
+AS3795 Bryn Mawr College 65536
+AS17234 Gustavus Adolphus College 65536
+AS33030 College of Wooster 65536
+AS395871 SUNY College at Plattsburgh 65536
+AS395501 Reed College 65536
+AS31746 Franklin and Marshall College 65536
+AS2041 St. Norbert College 65536
+AS33004 Empire State College 65536
+AS22303 SUNY College at New Paltz 65536
+AS393296 Augustana College 65536
+AS33608 Hood College 65536
+AS17152 Bates College 65536
+AS32136 Farmingdale State College 65536
+AS27219 SUNY College at Cortland 65536
+AS40102 Montgomery College. 65536
+AS22217 Calvin College 65536
+AS6124 Marist College 65536
+AS3782 Swarthmore College 65536
+AS14550 Middlebury College 65536
+AS54257 Vermont State Colleges 65536
+AS14486 Occidental College 65536
+AS10545 Lynchburg College 65536
+AS33503 Medical College of Wisconsin 65536
+AS10849 Dallas College 65536
+AS394673 Milwaukee Area Technical College 65536
+AS54177 St. John Fisher College 65536
+AS22949 Grinnell College 65536
+AS397179 Bridgewater College 65536
+AS36368 Oberlin College 65536
+AS10755 Dartmouth College 65536
+AS46470 Skidmore College 65536
+AS22834 Boston College 65536
+AS19933 Buffalo State College 65536
+AS62810 SUNY College at Oneonta 65536
+AS19899 Miami Dade College 65536
+AS3777 Haverford College 65536
+AS395015 SUNY College at Fredonia 65280
+AS16481 Babson College 64256
+AS17326 Concordia College 51200
+AS33692 Macalester College 49152
+AS26557 Carleton College 40960
+AS3410 Cornell College 32768
+AS3606 Connecticut College 32768
+AS22854 Catawba College 32768
+AS395577 Ithaca College 28416
+AS19999 Union College 24832
+AS30376 College of St. Scholastica 24576
+AS1265 Saint Mary's College 24576
+AS3 Massachusetts Institute of Technology 2040064
+AS3527 National Institutes of Health 336640
+AS91 Rensselaer Polytechnic Institute 198912
+AS2637 Georgia Institute of Technology 197632
+AS1312 Virginia Polytechnic Institute and State Univ. 147712
+AS20337 SUNY Institute of Technology 132352
+AS31 California Institute of Technology 132352
+AS166 Institute for Defense Analyses 131584
+AS10326 Worcester Polytechnic Institute 67584
+AS63 Massachusetts Institute of Technology 67584
+AS13462 Institute of Electrical and Electronics Engineers 66816
+AS31967 Florida Institute of Technology 66048
+AS4385 Rochester Institute of Technology 65792
+AS49 US National Institute of Standards &amp; Technology 65792
+AS11540 Research Triangle Institute 65792
+AS32513 BATTELLE MEMORIAL INSTITUTE 65536
+AS4246 New Jersey Institute of Technology 65536
+AS54965 Polytechnic Institute of NYU 65536
+AS398451 Rose-Hulman Institute of Technology Inc 65536
+AS14706 Monterey Bay Aquarium Research Institute 65536
+AS16889 Stevens Institute of Technology 65536
+AS14169 Virginia Military Institute 65536
+AS6150 National Cancer Institute 65536
+AS26020 Space Telescope Science Institute 33792
+AS29825 Illinois Institute of Technology 28160
+AS2003 Electric Power Research Institute 24320
+AS270 National Aeronautics and Space Administration 1347840
+AS297 National Aeronautics and Space Administration 932352
+AS3477 National Oceanic and Atmospheric Administration 304640
+AS1843 National Aeronautics and Space Administration 267264
+AS10343 National Aeronautics and Space Administration 132096
+AS1701 National Aeronautics and Space Administration 131072
+AS2648 National Oceanic and Atmospheric Administration 68352
+AS4046 Federal Aviation Administration 68352
+AS6629 National Oceanic and Atmospheric Administration 66816
+AS24 National Aeronautics and Space Administration 65536
+AS11985 Social Security Administration 18688
+AS1761 General Services Commission 2688768
+AS46341 California Public Utilities Commission 65536
+AS1541 Headquarters USAISC 3052032
+AS4010 Headquarters USAISC 1176320
+AS1503 Headquarters USAISC 442880
+AS1452 Headquarters USAISC 427008
+AS747 Headquarters USAISC 343040
+AS1488 Headquarters USAISC 299264
+AS531 Headquarters USAISC 270592
+AS1602 Headquarters USAISC 263936
+AS1479 Headquarters USAISC 204800
+AS1477 Headquarters USAISC 200704
+AS1637 Headquarters USAISC 200192
+AS1491 Headquarters USAISC 184832
+AS1489 Headquarters USAISC 175616
+AS1462 Headquarters USAISC 144640
+AS1506 Headquarters USAISC 142848
+AS1468 Headquarters USAISC 135424
+AS1500 Headquarters USAISC 135168
+AS13 Headquarters USAISC 132352
+AS1649 Headquarters USAISC 132096
+AS1530 Headquarters USAISC 131072
+AS1483 Headquarters USAISC 131072
+AS1493 Headquarters USAISC 96256
+AS1527 Headquarters USAISC 88064
+AS1451 Headquarters USAISC 78336
+AS1480 Headquarters USAISC 72192
+AS252 Headquarters USAISC 70144
+AS1510 Headquarters USAISC 69888
+AS1475 Headquarters USAISC 69632
+AS1519 Headquarters USAISC 66560
+AS1528 Headquarters USAISC 66048
+AS1524 Headquarters USAISC 65792
+AS1458 Headquarters USAISC 65792
+AS1533 Headquarters USAISC 65536
+AS1466 Headquarters USAISC 65536
+AS1460 Headquarters USAISC 65536
+AS289 Headquarters USAISC 65536
+AS575 Headquarters USAISC 45056
+AS213 Headquarters USAISC 32768
+AS1502 Headquarters USAISC 31744
+AS1501 Headquarters USAISC 18176
+AS385 Air Force Systems Networking 7011072
+AS4152 USDA 3080192
+AS210 Utah Education Network 1487872
+AS22284 Bureau of Land Management Joint Pipeline Office 1164288
+AS1226 California Department of Technology 1104128
+AS386 Air Force Systems Networking 829952
+AS2897 Georgia Technology Authority 590080
+AS13325 Michigan State Government 508160
+AS11686 Education Networks of America 340480
+AS132 Air Force Systems Networking 329216
+AS29992 Department of Veterans Affairs 327936
+AS26810 U.S. Dept. of Health and Human Services 312320
+AS683 Argonne National Lab 302080
+AS11714 Network Nebraska 294656
+AS127 Jet Propulsion Laboratory 275456
+AS399 Air Force Systems Networking 274432
+AS122 UPMC 270848
+AS2576 U. S. Department of Transportation 268800
+AS19902 Department of Administrative Services 263424
+AS68 Los Alamos National Laboratory 263168
+AS14298 Environmental Protection Agency 262144
+AS6527 Commonwealth of Massachusetts 230656
+AS395139 NewYork-Presbyterian Hospital 229376
+AS10405 Union Pacific Railroad Company 229376
+AS32982 U.S. Department of Energy 219648
+AS22742 Connecticut Education Network 216832
+AS3475 Navy Network Information Center (NNIC) 203776
+AS6431 ATT LABS 202496
+AS1999 U.S. House of Representatives 197376
+AS40831 Partners HealthCare System Inc. 196864
+AS5774 United States Postal Service. 196608
+AS26854 New York State 182272
+AS45 Lawrence Livermore National Laboratory 175360
+AS2749 Navy Network Information Center (NNIC) 169984
+AS10921 Commonwealth of KentuckyDepartment of Information Systems 164352
+AS2495 Kansas Research and Education Network 164096
+AS3851 Nevada System of Higher Education 163840
+AS5078 Oklahoma Network for Education Enrichment and 161024
+AS195 San Diego Supercomputer Center 153856
+AS10879 Unitedhealthcare 147968
+AS32440 Louisiana Board of Regents/Louisiana Optical Network Initiative (LONI) 140288
+AS409 Air Force Systems Networking 139520
+AS22 Navy Network Information Center (NNIC) 139520
+AS377 Sandia National Laboratories 136960
+AS10497 The World Bank Group 134144
+AS50 Oak Ridge National Laboratory 133888
+AS89 Navy Network Information Center (NNIC) 133120
+AS427 Air Force Systems Networking 132608
+AS3562 Sandia National Laboratories 132352
+AS22093 Cleveland Clinic Foundation 131840
+AS2642 California Department of Technology 131840
+AS16 Lawrence Berkeley National Laboratory 131328
+AS48 Navy Network Information Center (NNIC) 131072
+AS7925 West Virginia Network for Educational Telecomputing 131072
+AS10384 Tennessee Valley Authority 131072
+AS10995 PNC Bank N.A. 131072
+AS14017 Burlington Northern Sante Fe Railway Corp 131072
+AS2024 Eversource Energy 131072
+AS11577 Vermont Department of Information and Innovation 131072
+AS14702 Idaho National Laboratory 131072
+AS688 Department of Interior 131072
+AS10702 Idaho National Laboratory 131072
+AS6966 U.S. Department of State 131072
+AS13576 SOUTH DAKOTA NETWORK 129536
+AS10794 Bank of America National Association 126464
+AS1982 Northwest Nexus Inc. 116480
+AS6102 CBS inc. 116224
+AS4266 California Education and Research Federation Network 114176
+AS11911 The Bank of New York Mellon Corporation 102912
+AS12007 Raytheon Company 100608
+AS14464 Rhode Island Network for Educ. Technology 99072
+AS22260 The Bank of New York Mellon Corporation 97024
+AS62600 Arizona Board of Regents 92928
+AS452 Air Force Systems Networking 82944
+AS6189 Enoch-Pratt Free Library 82176
+AS13506 US Department of the Treasury 81920
+AS40581 Arkansas Research and Education Optical Network 77824
+AS10837 Wells Fargo &amp; Company 76032
+AS14954 The Fred Hutchinson Cancer Research Center 73728
+AS12217 UNITED PARCEL SERVICE 73216
+AS13611 U.S. Center For Disease Control and Prevention 72448
+AS37 Navy Network Information Center (NNIC) 69632
+AS1842 United States Geological Survey 68608
+AS4196 Wells Fargo &amp; Company 68608
+AS3147 U.S. BANCORP 68352
+AS18709 Bank of the West 68352
+AS25996 FBI Criminal Justice Information Systems 68096
+AS3923 Federal Aviation Agency 68096
+AS10754 Federal Reserve Board 67840
+AS26305 SSM Health Care 67840
+AS7743 JPMorgan Chase &amp; Co. 67584
+AS19050 U.S. Department of Health &amp; Human Services 67328
+AS11052 Intermountain Health Care 67328
+AS85 The Aerospace Corporation 67072
+AS11101 Palmetto Health 66816
+AS32104 Wellmont Health System 66816
+AS5766 Indian Health Service 66816
+AS3152 Fermi National Accelerator Laboratory (Fermilab) 66816
+AS25640 Hawaii Department of Education 66816
+AS7838 USAA 66816
+AS43 Brookhaven National Laboratory 66560
+AS54640 The Moses H. Cone Memorial Hospital 66560
+AS84 Navy Network Information Center (NNIC) 66560
+AS14822 Memorial Sloan-Kettering Cancer Center 66304
+AS1747 IBM T.J. Watson Research Center 66304
+AS33274 Fairview Health Services 66304
+AS27402 Independence Blue Cross 66048
+AS22328 Cedars-Sinai Health Systems 66048
+AS7973 Mayo Foundation for Medical Education and Research 66048
+AS18980 Peace Health 66048
+AS47024 The MetroHealth System 66048
+AS14827 Washington State Department of Transportation 66048
+AS102 National Science Foundation 66048
+AS22238 Defense Advanced Research Projects Agency(DARPA) 66048
+AS10583 Connecticut Hospital Assoc. 66048
+AS11685 Huntington National Bank 66048
+AS16713 Northwest Open Access Network 66048
+AS1256 Massachusetts Education Computer Network 66048
+AS3671 SLAC National Accelerator Laboratory 65792
+AS396312 Richmond Memorial Hospital 65792
+AS6406 Continuous Electron Beam Accelerator Facility 65792
+AS2650 Executive Office Of The President 65792
+AS14223 New York State Department of Health 65792
+AS22723 United Nations 65792
+AS18880 Lam Research Corporation 65792
+AS11286 KeyBank National Association 65792
+AS398846 Local Government Information Systems Association 65792
+AS54363 Baker Hughes Incorporated 65792
+AS18697 GREEN MOUNTAIN POWER CORPORATION 65792
+AS7800 Allina Health System Inc. 65792
+AS7773 South Dakota State Government 65792
+AS11529 National Grid 65792
+AS22809 American Family Insurance 65792
+AS46483 Rochester General Hospital 65792
+AS2575 Salt River Project Agricultural Improvement &amp; Power District 65536
+AS14443 Broadridge Financial Solutions Inc. 65536
+AS22178 Senate of Pennsylvania 65536
+AS33194 Chemical Abstracts Service 65536
+AS22920 Bureau of Indian Affairs Office of IndianEducation 65536
+AS3743 ARCELORMITTAL USA INC. 65536
+AS25609 Detroit Medical Center 65536
+AS1621 Securian Financial Group Inc. 65536
+AS220 Air Force Systems Networking 65536
+AS32243 ATI 65536
+AS3495 US Senate 65536
+AS46158 OCM BOCES 65536
+AS15196 Maryland Department of Transportation 65536
+AS1975 PROQUEST LLC 65536
+AS7068 Pfizer Inc. 65536
+AS11197 Dartmouth-Hitchcock Medical Center 65536
+AS4241 California State Franchise Tax Board 65536
+AS46620 William Beaumont Hospital 65536
+AS5058 Navy Network Information Center (NNIC) 65536
+AS21897 Virtua Health 65536
+AS3705 U.S. Government Publishing Office 65536
+AS3486 JPMorgan Chase &amp; Co. 65536
+AS55013 MTS Systems Corporation 65536
+AS27185 Danbury Hospital - ITG 65536
+AS14946 Baptist Memorial Health Care Corporation 65536
+AS2705 BJC HEALTH SYSTEM 65536
+AS11971 Pfizer Inc. 65536
+AS2532 Library of Congress 65536
+AS53984 Wellstar Health System 65536
+AS17094 Mutual of Omaha Insurance Company 65536
+AS30710 Spectrum Health 65536
+AS21799 Metropolitan Water District of Southern California 65536
+AS40112 Omaha Public Power District 65536
+AS40127 Longwood Medical and Academic Area (LMA) 65536
+AS784 Henry M. Jackson Foundation for The Advancement of Military Medicine 65536
+AS7847 NASA Goddard Space Flight Center 65536
+AS33343 U.S. Dept. of Commerce - ITA 65536
+AS15307 Childrens Hospital and Regional Medical Center 65536
+AS53352 Henry Ford Health System 65536
+AS7301 National Academy of Sciences 65536
+AS2936 National Energy Research Scientific Computing Center 65536
+AS36091 South Coast Air Quality Management District 65536
+AS398130 Maryland Administrative Office of the Courts (AOC) 65536
+AS18715 New York Power Authority 65536
+AS1448 United Cooperative Services 65536
+AS7764 U. S. Bureau of the Census 65536
+AS53585 The State Insurance Fund 65536
+AS7152 American Red Cross 65536
+AS17343 South Florida Water Management District 65536
+AS46520 California Department of Justice 65536
+AS70 National Library of Medicine 65536
+AS7328 The Children's Hospital of Philadelphia 65536
+AS27336 Sentara Healthcare 65536
+AS63102 Michigan Education Special Services Association 65536
+AS18481 BOCES Southern Westchester Lower Hudson Regional Information Center 65536
+AS1348 California Department of Transportation 65536
+AS391 Air Force Systems Networking 58368
+AS5663 US Geological Survery 57344
+AS397112 Illinois Mathematics and Science Academy 57344
+AS4264 California Education and Research Federation Network 55040
