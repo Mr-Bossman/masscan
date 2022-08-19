@@ -9,18 +9,19 @@
 #include <stdlib.h>
 
 static unsigned char hand_shake_ptr[128];
-static unsigned char statusQ[] = {1,0};
 
 unsigned char* hand_shake(uint16_t port, const char* ip,size_t ip_len)
 {
-  size_t tlen = 7+ip_len;
+  size_t tlen = 9+ip_len;
   unsigned char * ret = (unsigned char *)calloc(1,tlen);
   ret[0] = 6+ip_len;
   ret[3] = ip_len;
   memcpy(ret+4,ip,ip_len);
-  ret[tlen-3] = (unsigned char)(port&0xff);
-  ret[tlen-2] = (unsigned char)(port>>8);
-  ret[tlen-1] = 1;
+  ret[tlen-5] = (unsigned char)(port&0xff);
+  ret[tlen-4] = (unsigned char)(port>>8);
+  ret[tlen-3] = 1;
+  ret[tlen-2] = 1;
+  ret[tlen-1] = 0;
   return ret;
 }
 
@@ -103,22 +104,9 @@ mc_selftest(void)
 
 /***************************************************************************
  ***************************************************************************/
-static void
-mc_callback(const struct Banner1 *banner1, struct InteractiveData *more)
-{
-    more->m_length = 2;
-    more->m_payload = (void *)statusQ;
-    more->is_payload_dynamic = 0;
-}
-
-/***************************************************************************
- ***************************************************************************/
 struct ProtocolParserStream banner_mc = {
     "mc", 25565, 0, 0, 0,
     mc_selftest,
     mc_init,
     mc_parse,
-    0,
-    0,
-    mc_callback
 };
