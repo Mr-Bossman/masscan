@@ -12,17 +12,19 @@ static unsigned char hand_shake_ptr[128];
 
 unsigned char* hand_shake(uint16_t port, const char* ip,size_t ip_len)
 {
-  size_t tlen = 9+ip_len;
-  unsigned char * ret = (unsigned char *)calloc(1,tlen);
-  ret[0] = 6+ip_len;
-  ret[3] = ip_len;
-  memcpy(ret+4,ip,ip_len);
-  ret[tlen-5] = (unsigned char)(port&0xff);
-  ret[tlen-4] = (unsigned char)(port>>8);
-  ret[tlen-3] = 1;
-  ret[tlen-2] = 1;
-  ret[tlen-1] = 0;
-  return ret;
+    size_t tlen = 10+ip_len;
+    unsigned char * ret = (unsigned char *)calloc(1,tlen);
+    ret[0] = 7+ip_len;
+    ret[2] = 0xf7; // protocall version
+    ret[3] = 5; // protocall version
+    ret[4] = ip_len;
+    memcpy(ret+5,ip,ip_len);
+    ret[tlen-5] = (unsigned char)(port>>8);
+    ret[tlen-4] = (unsigned char)(port&0xff);
+    ret[tlen-3] = 1;
+    ret[tlen-2] = 1;
+    ret[tlen-1] = 0;
+    return ret;
 }
 
 void* memstr(void * mem, size_t len, char * str)
@@ -49,7 +51,16 @@ mc_parse(  const struct Banner1 *banner1,
 {
     struct MCSTUFF *mc = &pstate->sub.mc;
 
-    if(mc->imgstart&&mc->imgend) { // we already found and removed image data
+    for(size_t i = 0; i < length; i++) {
+        if(px[i] == '{')
+            mc->brackcount++;
+        if(px[i] == '}')
+            mc->brackcount--;
+    }
+    if(mc->brackcount <= 0)
+        more->is_closing = 1;
+
+    if((mc->imgstart&&mc->imgend) || mc->brackcount <= 0) { // we already found and removed image data
         banout_append(banout, PROTO_MC,px,length);
     } else {
         mc->banmem = realloc(mc->banmem,mc->totalLen+length+1); // expand to add new memory for added paket
@@ -70,14 +81,6 @@ mc_parse(  const struct Banner1 *banner1,
             }
         }
     }
-    for(size_t i = 0; i < length; i++) {
-        if(px[i] == '{')
-            mc->brackcount++;
-        if(px[i] == '}')
-            mc->brackcount--;
-    }
-    if(mc->brackcount <= 0)
-        more->is_closing = 1;
 }
 
 /***************************************************************************
@@ -86,10 +89,10 @@ static void *
 mc_init(struct Banner1 *banner1)
 {
     unsigned char * tmp = hand_shake(25565,"localhost",9);
-    memcpy(hand_shake_ptr,tmp,tmp[0]+1);
+    memcpy(hand_shake_ptr,tmp,tmp[0]+3);
     free(tmp);
     banner_mc.hello = hand_shake_ptr;
-    banner_mc.hello_length = hand_shake_ptr[0]+1;
+    banner_mc.hello_length = hand_shake_ptr[0]+3;
     banner1->payloads.tcp[25565] = (void*)&banner_mc;
     return 0;
 }
